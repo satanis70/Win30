@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="start_game">Start Game</string>
+    <string name="field_busy">This field is busy</string>
+    <string name="play_again">Play again</string>
 </resources>

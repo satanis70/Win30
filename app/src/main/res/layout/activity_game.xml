@@ -9,6 +9,7 @@
     tools:context=".GameActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,6 +21,8 @@
             android:id="@+id/button_1"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:textColor="@color/black"
+            android:textSize="48sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,6 +31,8 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginStart="2dp"
+            android:textColor="@color/black"
+            android:textSize="48sp"
             app:layout_constraintStart_toEndOf="@+id/button_1"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,6 +40,8 @@
             android:id="@+id/button_3"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:textColor="@color/black"
+            android:textSize="48sp"
             app:layout_constraintStart_toEndOf="@+id/button_2"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,6 +49,8 @@
             android:id="@+id/button_4"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:textColor="@color/black"
+            android:textSize="48sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_1" />
 
@@ -50,6 +59,8 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginStart="2dp"
+            android:textColor="@color/black"
+            android:textSize="48sp"
             app:layout_constraintStart_toEndOf="@+id/button_4"
             app:layout_constraintTop_toBottomOf="@+id/button_2" />
 
@@ -57,6 +68,8 @@
             android:id="@+id/button_6"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:textColor="@color/black"
+            android:textSize="48sp"
             app:layout_constraintStart_toEndOf="@+id/button_5"
             app:layout_constraintTop_toBottomOf="@+id/button_3" />
 
@@ -64,6 +77,8 @@
             android:id="@+id/button_7"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:textColor="@color/black"
+            android:textSize="48sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button_4" />
 
@@ -72,6 +87,8 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:layout_marginStart="2dp"
+            android:textColor="@color/black"
+            android:textSize="48sp"
             app:layout_constraintStart_toEndOf="@+id/button_7"
             app:layout_constraintTop_toBottomOf="@+id/button_5" />
 
@@ -79,6 +96,8 @@
             android:id="@+id/button_9"
             android:layout_width="120dp"
             android:layout_height="120dp"
+            android:textColor="@color/black"
+            android:textSize="48sp"
             app:layout_constraintStart_toEndOf="@+id/button_8"
             app:layout_constraintTop_toBottomOf="@+id/button_6" />
 
@@ -119,5 +138,16 @@
             app:layout_constraintTop_toBottomOf="@+id/button_5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_play_again"
+        android:background="@drawable/button_round"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:text="@string/play_again"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

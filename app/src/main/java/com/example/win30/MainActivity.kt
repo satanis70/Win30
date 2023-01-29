@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         addImage()
         binding.buttonStart.setOnClickListener {
             startActivity(Intent(this, GameActivity::class.java))
+            finish()
         }
     }
 
